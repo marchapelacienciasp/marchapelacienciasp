@@ -1,7 +1,7 @@
 <html lang="pt-BR">
 
 <head>
-    <title>Objetivos</title>
+    <title>Fotos</title>
     <link rel="shortcut icon" href="../img/atomo.ico" />
     <meta name="description" content="Site oficial da Marcha pela Ciência em São Paulo">
 
@@ -16,260 +16,244 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <style type="text/css">
-        .hidden.menu {
-            display: none;
-        }
 
-        .masthead.segment {
-            min-height: 10px;
-            padding: 1em 0em;
-        }
+    .hidden.menu {
+      display: none;
+    }
 
-        .masthead .logo.item img {
-            margin-right: 1em;
-        }
+    .masthead.segment {
+      min-height: 10px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
 
-        .masthead .ui.menu .ui.button {
-            margin-left: 0.5em;
-        }
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
 
-        .masthead h1.ui.header {
-            margin-top: 1em;
-            margin-bottom: 1em;
-            font-size: 4em;
-            font-weight: normal;
-        }
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
 
-        .masthead h2 {
-            font-size: 1.7em;
-            font-weight: normal;
-        }
+    .footer.segment {
+      padding: 5em 0em;
+    }
 
-        .ui.vertical.stripe {
-            padding: 8em 0em;
-        }
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
 
-        .ui.vertical.stripe h3 {
-            font-size: 2em;
-        }
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
 
-        .ui.vertical.stripe .button+h3,
-        .ui.vertical.stripe p+h3 {
-            margin-top: 3em;
-        }
 
-        .ui.vertical.stripe .floated.image {
-            clear: both;
-        }
+  </style>
 
-        .ui.vertical.stripe p {
-            font-size: 1.33em;
-        }
+  <script src="semantic/jquery.min.js"></script>
+  <script src="semantic/components/visibility.js"></script>
+  <script src="semantic/components/sidebar.js"></script>
+  <script src="semantic/components/transition.js"></script>
 
-        .ui.vertical.stripe .horizontal.divider {
-            margin: 3em 0em;
-        }
+  <script>
+ $(document)
+   .ready(function() {
 
-        .quote.stripe.segment {
-            padding: 0em;
-        }
+     // fix menu when passed
+     $('.masthead')
+       .visibility({
+         once: false,
+         onBottomPassed: function() {
+           $('.fixed.menu').transition('fade in');
+         },
+         onBottomPassedReverse: function() {
+           $('.fixed.menu').transition('fade out');
+         }
+       })
+     ;
 
-        .quote.stripe.segment .grid .column {
-            padding-top: 5em;
-            padding-bottom: 5em;
-        }
+     // create sidebar and attach to menu open
+     $('.ui.sidebar')
+       .sidebar('attach events', '.toc.item')
+     ;
 
-        .footer.segment {
-            padding: 5em 0em;
-        }
-
-        .secondary.pointing.menu .toc.item {
-            display: none;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .ui.fixed.menu {
-                display: none !important;
-            }
-            .secondary.pointing.menu .item,
-            .secondary.pointing.menu .menu {
-                display: none;
-            }
-            .secondary.pointing.menu .toc.item {
-                display: block;
-            }
-            .masthead.segment {
-                min-height: 350px;
-            }
-            .masthead h1.ui.header {
-                font-size: 2em;
-                margin-top: 1.5em;
-            }
-            .masthead h2 {
-                margin-top: 0.5em;
-                font-size: 1.5em;
-            }
-        }
-    </style>
-
-    <script src="semantic/jquery.min.js"></script>
-    <script src="semantic/components/visibility.js"></script>
-    <script src="semantic/components/sidebar.js"></script>
-    <script src="semantic/components/transition.js"></script>
-
-    <script>
-        $(document)
-            .ready(function() {
-
-                // fix menu when passed
-                $('.masthead')
-                    .visibility({
-                        once: false,
-                        onBottomPassed: function() {
-                            $('.fixed.menu').transition('fade in');
-                        },
-                        onBottomPassedReverse: function() {
-                            $('.fixed.menu').transition('fade out');
-                        }
-                    });
-
-                // create sidebar and attach to menu open
-                $('.ui.sidebar')
-                    .sidebar('attach events', '.toc.item');
-
-            });
-    </script>
+   })
+ ;
+ </script>
 
 </head>
 
 
-<body>
+<body style="background:#e2e2e2">
+  <section class="ui center aligned container">
+    <br />
+    <h1 class="ui icon header" style="font-family: 'Raleway'">
+  <img class="ui image" src="./img/atomo sp.png" style="width:40%">
+  <div class="content"><br />
+    Marcha Pela Ciência
+    <div class="sub header">São Paulo</div>
+  </div>
+  <br><br>
+</h1>
+  </section>
 
-    <!-- Sidebar Menu -->
-    <div class="ui vertical inverted sidebar menu" style="background:#00507f">
-        <a class="item" href="./index">Início</a>
-        <a class="active item">Objetivos</i></a>
-        <a class="item" href="http://marchapelacienciasp.com/#participe">Participe</a>
-        <a class="item" href="./apoiadores">Apoiadores</a>
-        <a class="item" href="./ajude">Ajude</a>
-        <a class="item" href="./press release.pdf" target="_blank">Imprensa <i class="external icon"></i></a>
-        <a class="item" href="./contato">Contato</a>
-    </div>
+  <section class="ui container">
+    <div class="ui secondary menu" style="font-family:'Raleway'">
+      <div class="item" style="font-size:1.5em">Objetivos da Marcha</div>
+        <a class="ui right item" onclick="fechar()">
+          Voltar</a></div>
+
+          <div class="ui text container">
+              <br><br>
+              <h3>Princípios fundamentais</h3>
+              <h4>1 - A  ciência serve ao bem comum</h4>
+              <p>Muitas pessoas consideram a ciência algo complicado, de difícil compreensão, distante do seu cotidiano. Um dos objetivos da marcha é mostrar à essas pessoas que seu dia a dia está cercado de conquistas científicas. Além disso, queremos demonstrar
+                  que uma sociedade que entende os princípios científicos está mais preparada para tomar decisões de forma crítica e responsável. Por fim, destacamos a responsabilidade da comunidade científica de avaliar o impacto da atividade humana sobre
+                  o planeta e assim promover uma discussão sobre o caminho a seguir, preservando gerações futuras. .</p>
+              <h4>2 - Educação científica de ponta</h4>
+              <p>Nós apoiamos uma educação científica de crianças e adultos que os ajude a pensar criticamente, elaborar e avaliar perguntas baseados em evidências. A ciência deve estar presente na educação de todos e não apenas de um grupo específico.</p>
+              <h4>3 - Pela comunicação científica aberta, honesta e ao alcance do público</h4>
+              <p>A linguagem científica é pouco acessível para boa parcela da população brasileira, o que as impede de entender e consequentemente valorizar a ciência. Divulgar ciência de forma compreensível e abrangente, através de exposições, artes, brincadeiras
+                  e esportes são formas efetivas de aproximar a ciências das pessoas, que por sua vez trarão questões importantes a serem investigadas pela ciência</p>
+              <h4>4 - Por políticas e regulamentos de interesse público baseados em evidências</h4>
+              <p>As  decisões políticas que afetam diretamente a vida e o  bem estar humano, do meio ambiente e de todas as outras formas de vida, devem necessariamente estar embasadas em evidências científicas. Quando limitamos decisões desse tipo ao campo
+                  da opinião, estamos mais sujeitos a falhas humanas.</p>
+              <h4>5 - Pelo financiamento das pesquisas científicas e suas aplicações</h4>
+              <p>O orçamento da ciência deve refletir a sua importância na democracia. Nós defendemos mais recursos para pesquisa, contratações no campo da ciência e aplicação do pensamento científico na gestão pública.</p>
+              <br><br></div>
+
+          <div class="ui text container">
 
 
-    <!-- Page Contents -->
-    <section style="background:#00507f;">
+              <br><br>
+              <h3>Objetivos específicos - Marcha pela Ciência SP</h3>
+              <h4>1 - Valorização da ciência e do cientista</h4>
+              <p>Sem ciência não existe desenvolvimento, portanto é urgente que a profissão de cientista esteja entre as tantas outras reconhecidas pela sociedade, assim como o produto do seu trabalho.</p>
+              <h4>2- Pelo desenvolvimento e pela soberania do país</h4>
+              <p>O avanço da ciência e tecnologia brasileira é fundamental para a promoção de um novo ciclo de industrialização capaz de catalisar um desenvolvimento econômico que seja socialmente e ambientalmente responsável, traçando um caminho para a superação
+                  da dependência econômica, cultural e tecnológica que limita as possibilidades de superação das desigualdades regionais. </p>
+              <h4>3 - Maiores investimentos para pesquisa e carreira acadêmica</h4>
+              <p>Estamos preocupados com a redução do investimento federal e estadual via agências de fomento como CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico), CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior), FAPs
+                  (Fundações de Amparo à Pesquisa) e afins. Sem investimento não há ciência de qualidade. Se perdermos nossos cientistas, como será possível desenvolver o país?</p>
+              <h4>4 - Mais contratações para Institutos de Pesquisa</h4>
+              <p>Muitos Institutos de Pesquisa estão sucateados. Acreditamos que não basta direcionar investimento para a “modernização” destes centros, se não houver equipe qualificada para usufruir destes espaços. Dessa forma, lutamos por mais contratações
+                  em Institutos de Pesquisa Brasileiros.</p>
+              <h4>5 - Maior investimento em ensino de ciências nas escolas brasileiras</h4>
+              <p>Jovens treinados a pensarem de forma crítica darão origem a, uma sociedade pronta para discutir seus problemas e desafios de modo qualificado. </p>
+              <h4>6 - Por mais direitos para pós-graduandas e pós-graduandos</h4>
+              <p>É fundamental que todo cientista em formação que desejar, tenha acesso à bolsa de pesquisa durante TODO o mestrado e doutorado (universalização das bolsas de pesquisa). Defendemos também a assistência estudantil, licença parental (quando necessário),
+                  inscrição no INSS, reajuste anual de bolsas e uma política de inserção e fixação de mestres e doutores no território nacional.</p>
+              <h4>7 - Pelo financiamento da ciência</h4>
+              <p>Defendemos melhor financiamento à ciência, como por exemplo o direcionamento de 2% dos royalties do minério para a ciência e tecnologia e o cumprimento da alíquota de 1% do ICMS para o orçamento estadual à FAPESP.  Defendemos também o maior
+                  investimento de empresas públicas e privadas à Ciência.</p>
+              <h4>8 - Pela volta do Ministério da Ciência, Tecnologia e Inovação</h4>
+              <p>Em 2016, o Ministério da Ciência, Tecnologia e Inovação (MCTI) foi extinto, e suas secretarias incorporadas ao Ministério das Comunicações, que passou a se chamar Ministério da Ciência, Tecnologias, Inovações e Comunicações. A junção dessas
+                  atividades em um único Ministério enfraqueceria o setor de ciência, tecnologia e inovação, que, em outros países, ganha importância em uma economia mundial crescentemente baseada no conhecimento e é considerado o motor do desenvolvimento.
+                  Europa, Estados Unidos, China, Coreia do Sul, são alguns exemplos de países que, em época de crise, aumentam os investimentos em Pesquisa e Desenvolvimento, pois consideram que esta é a melhor maneira de construir uma saída sustentável
+                  da crise. Assim, defendemos a refundação do MCTI com financiamento adequado, bem como a reestruturação de importantes órgãos extintos neste processo: a Secretaria de Ciência e Tecnologia pela Inclusão Social (SECIS) e o Departamento de
+                  Difusão e Popularização da Ciência (DEPDI) </p>
+              <h4>9 - Pela divulgação ampla e democrática de ciência</h4>
+              <p>Grande parte da população brasileira, inclusive paulistana,  não se interessa pela ciência. Isso se dá, dentre outros motivos, devido à falta de preparo dos cientistas para falar de uma forma clara e inteligível sobre sua ciência. Dessa forma,
+                  defendemos maiores investimentos na formação de divulgadores científicos, como já vem acontecendo em algumas universidades do estado de São Paulo, visto que este também é um grande nicho profissional a ser ocupado. </p>
+              <h4>10 - Contra a política de juros altos e cortes na ciência</h4>
+              <p>Enfatizamos que os orçamentos da ciência, educação e saúde não devem ser cortados a cada evento de crise econômica, devendo-se buscar outras saídas para a superação da crise. Em especial, retomar a recomposição do orçamento do CNPq possibilitado
+                  a partir de recursos da repatriação de recursos não declarados no exterior.</p>
+          </div>
+          <br><br><br>
 
-        <div class="ui container">
-            <div class="ui large secondary inverted pointing menu" style="border:none">
-                <a class="toc item">
-                    <i class="sidebar icon"></i>
-                </a>
-                <a class="item" href="./index">Início</a>
-                <a class="active item">Objetivos</i></a>
-                <a class="item" href="./apoiadores">Apoiadores</a>
-                <a class="item" href="./ajude">Ajude</a>
-                <div class="right menu">
-                    <a class="item" href="./press release.pdf" target="_blank">Imprensa</a></div>
-                <a class="item" href="./contato">Contato</a>
+
+
+
+      <div class="ui basic segment" style="width:100%" hidden="" id="social">
+          <div class="content">
+            <div class="ui animated relaxed list">
+              <a class="item" style="color:grey" href="https://www.facebook.com/marchapelacienciasp/" target="_blank">
+                <i class="facebook icon"></i>
+                Facebook
+              </a>
+              <a class="item" style="color:grey" href="https://twitter.com/marchacienciasp" target="_blank">
+                <i class="twitter icon"></i>
+                Twitter
+              </a>
+              <a class="item" style="color:grey" href="https://www.instagram.com/marchapelacienciasp/" target="_blank">
+                <i class="instagram icon"></i>
+                Instagram
+              </a>
             </div>
+            <div class="ui list">
+              <div class="item" style="color:grey;font-size:0.93em">
+                marchapelacienciasp@gmail.com
+              </div>
+            </div>
+            <br />
+          </div>
         </div>
-        <br><br><br>
-        <div class="ui text container" style="text-align:center">
-            <h1 class="ui inverted header">
-        OBJETIVOS
-      </h1>
-            <br>
-            <a class="ui basic inverted button" href="./objetivos.pdf" target="_blank"><i class="ui file icon"></i>Abrir em PDF</a><br></div>
-        <br><br>
-        </div>
-    </section>
-
-
-
-
-
-    <section style="background:#ededed">
-        <div class="ui text container">
-            <br><br>
-            <h3>Princípios fundamentais</h3>
-            <h4>1 - A  ciência serve ao bem comum</h4>
-            <p>Muitas pessoas consideram a ciência algo complicado, de difícil compreensão, distante do seu cotidiano. Um dos objetivos da marcha é mostrar à essas pessoas que seu dia a dia está cercado de conquistas científicas. Além disso, queremos demonstrar
-                que uma sociedade que entende os princípios científicos está mais preparada para tomar decisões de forma crítica e responsável. Por fim, destacamos a responsabilidade da comunidade científica de avaliar o impacto da atividade humana sobre
-                o planeta e assim promover uma discussão sobre o caminho a seguir, preservando gerações futuras. .</p>
-            <h4>2 - Educação científica de ponta</h4>
-            <p>Nós apoiamos uma educação científica de crianças e adultos que os ajude a pensar criticamente, elaborar e avaliar perguntas baseados em evidências. A ciência deve estar presente na educação de todos e não apenas de um grupo específico.</p>
-            <h4>3 - Pela comunicação científica aberta, honesta e ao alcance do público</h4>
-            <p>A linguagem científica é pouco acessível para boa parcela da população brasileira, o que as impede de entender e consequentemente valorizar a ciência. Divulgar ciência de forma compreensível e abrangente, através de exposições, artes, brincadeiras
-                e esportes são formas efetivas de aproximar a ciências das pessoas, que por sua vez trarão questões importantes a serem investigadas pela ciência</p>
-            <h4>4 - Por políticas e regulamentos de interesse público baseados em evidências</h4>
-            <p>As  decisões políticas que afetam diretamente a vida e o  bem estar humano, do meio ambiente e de todas as outras formas de vida, devem necessariamente estar embasadas em evidências científicas. Quando limitamos decisões desse tipo ao campo
-                da opinião, estamos mais sujeitos a falhas humanas.</p>
-            <h4>5 - Pelo financiamento das pesquisas científicas e suas aplicações</h4>
-            <p>O orçamento da ciência deve refletir a sua importância na democracia. Nós defendemos mais recursos para pesquisa, contratações no campo da ciência e aplicação do pensamento científico na gestão pública.</p>
-            <br><br></div>
-    </section>
-
-
-    <section>
-        <div class="ui text container">
-
-
-            <br><br>
-            <h3>Objetivos específicos - Marcha pela Ciência SP</h3>
-            <h4>1 - Valorização da ciência e do cientista</h4>
-            <p>Sem ciência não existe desenvolvimento, portanto é urgente que a profissão de cientista esteja entre as tantas outras reconhecidas pela sociedade, assim como o produto do seu trabalho.</p>
-            <h4>2- Pelo desenvolvimento e pela soberania do país</h4>
-            <p>O avanço da ciência e tecnologia brasileira é fundamental para a promoção de um novo ciclo de industrialização capaz de catalisar um desenvolvimento econômico que seja socialmente e ambientalmente responsável, traçando um caminho para a superação
-                da dependência econômica, cultural e tecnológica que limita as possibilidades de superação das desigualdades regionais. </p>
-            <h4>3 - Maiores investimentos para pesquisa e carreira acadêmica</h4>
-            <p>Estamos preocupados com a redução do investimento federal e estadual via agências de fomento como CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico), CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior), FAPs
-                (Fundações de Amparo à Pesquisa) e afins. Sem investimento não há ciência de qualidade. Se perdermos nossos cientistas, como será possível desenvolver o país?</p>
-            <h4>4 - Mais contratações para Institutos de Pesquisa</h4>
-            <p>Muitos Institutos de Pesquisa estão sucateados. Acreditamos que não basta direcionar investimento para a “modernização” destes centros, se não houver equipe qualificada para usufruir destes espaços. Dessa forma, lutamos por mais contratações
-                em Institutos de Pesquisa Brasileiros.</p>
-            <h4>5 - Maior investimento em ensino de ciências nas escolas brasileiras</h4>
-            <p>Jovens treinados a pensarem de forma crítica darão origem a, uma sociedade pronta para discutir seus problemas e desafios de modo qualificado. </p>
-            <h4>6 - Por mais direitos para pós-graduandas e pós-graduandos</h4>
-            <p>É fundamental que todo cientista em formação que desejar, tenha acesso à bolsa de pesquisa durante TODO o mestrado e doutorado (universalização das bolsas de pesquisa). Defendemos também a assistência estudantil, licença parental (quando necessário),
-                inscrição no INSS, reajuste anual de bolsas e uma política de inserção e fixação de mestres e doutores no território nacional.</p>
-            <h4>7 - Pelo financiamento da ciência</h4>
-            <p>Defendemos melhor financiamento à ciência, como por exemplo o direcionamento de 2% dos royalties do minério para a ciência e tecnologia e o cumprimento da alíquota de 1% do ICMS para o orçamento estadual à FAPESP.  Defendemos também o maior
-                investimento de empresas públicas e privadas à Ciência.</p>
-            <h4>8 - Pela volta do Ministério da Ciência, Tecnologia e Inovação</h4>
-            <p>Em 2016, o Ministério da Ciência, Tecnologia e Inovação (MCTI) foi extinto, e suas secretarias incorporadas ao Ministério das Comunicações, que passou a se chamar Ministério da Ciência, Tecnologias, Inovações e Comunicações. A junção dessas
-                atividades em um único Ministério enfraqueceria o setor de ciência, tecnologia e inovação, que, em outros países, ganha importância em uma economia mundial crescentemente baseada no conhecimento e é considerado o motor do desenvolvimento.
-                Europa, Estados Unidos, China, Coreia do Sul, são alguns exemplos de países que, em época de crise, aumentam os investimentos em Pesquisa e Desenvolvimento, pois consideram que esta é a melhor maneira de construir uma saída sustentável
-                da crise. Assim, defendemos a refundação do MCTI com financiamento adequado, bem como a reestruturação de importantes órgãos extintos neste processo: a Secretaria de Ciência e Tecnologia pela Inclusão Social (SECIS) e o Departamento de
-                Difusão e Popularização da Ciência (DEPDI) </p>
-            <h4>9 - Pela divulgação ampla e democrática de ciência</h4>
-            <p>Grande parte da população brasileira, inclusive paulistana,  não se interessa pela ciência. Isso se dá, dentre outros motivos, devido à falta de preparo dos cientistas para falar de uma forma clara e inteligível sobre sua ciência. Dessa forma,
-                defendemos maiores investimentos na formação de divulgadores científicos, como já vem acontecendo em algumas universidades do estado de São Paulo, visto que este também é um grande nicho profissional a ser ocupado. </p>
-            <h4>10 - Contra a política de juros altos e cortes na ciência</h4>
-            <p>Enfatizamos que os orçamentos da ciência, educação e saúde não devem ser cortados a cada evento de crise econômica, devendo-se buscar outras saídas para a superação da crise. Em especial, retomar a recomposição do orçamento do CNPq possibilitado
-                a partir de recursos da repatriação de recursos não declarados no exterior.</p>
-        </div>
-        <br><br><br>
-    </section>
-
-    <section style="background:#e2e2e2">
-
-        <br><br><br>
-        <p class="ui center aligned text container">Tem alguma sugestão? Encontrou algum erro? <a href="./contato">Entre em contato.</a></p><br><br>
-    </section>
-
-
-    <section style="background:#32bdbc">
-        <br><br><br>
-        <div class="ui center aligned text container">
-            <a class="toc item" style="color:#00507f">
-                <i class="sidebar icon"></i> MENU
-            </a>
-        </div>
-        <br><br><br>
-    </section>
-
-
+      </div>
+    </div>
+  </section>
+  <script>
+      setTimeout(function(){
+        $("#social").transition("fade")
+    }, 700);
+  </script>
+  <script>
+  function fechar(){close();}
+  </script>
 </body>
 
 </html>
