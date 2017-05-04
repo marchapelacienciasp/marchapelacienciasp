@@ -14,7 +14,7 @@
 	thumbURL="thumbs/001.jpg"
 	linkURL="./img/fotos/001.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/001.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/001.jpg">
     <title><![CDATA[Atividade da Estação Biologia]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -22,7 +22,7 @@
 	thumbURL="thumbs/002.jpg"
 	linkURL="./img/fotos/002.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/002.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/002.jpg">
     <title><![CDATA[Atividade da Estação Biologia]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -30,7 +30,7 @@
 	thumbURL="thumbs/003.jpg"
 	linkURL="./img/fotos/003.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/003.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/003.jpg">
     <title><![CDATA[Discurso da Dra. Helena Nader]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -38,7 +38,7 @@
 	thumbURL="thumbs/004.jpg"
 	linkURL="./img/fotos/004.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/004.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/004.jpg">
     <title><![CDATA[Atividade do Laboratório de Estudos Evolutivos Humanos]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -46,7 +46,7 @@
 	thumbURL="thumbs/005.jpg"
 	linkURL="./img/fotos/005.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/005.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/005.jpg">
     <title><![CDATA[A marcha continuou mesmo debaixo de chuva]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -54,7 +54,7 @@
 	thumbURL="thumbs/006.jpg"
 	linkURL="./img/fotos/006.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/006.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/006.jpg">
     <title><![CDATA[Multidão no Largo da Batata]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -62,7 +62,7 @@
 	thumbURL="thumbs/007.jpg"
 	linkURL="./img/fotos/007.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/007.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/007.jpg">
     <title><![CDATA[Dr. Walter Neves dando entrevista]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -70,7 +70,7 @@
 	thumbURL="thumbs/008.jpg"
 	linkURL="./img/fotos/008.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/008.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/008.jpg">
     <title><![CDATA[Roda de conversa sobre vacinas]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -78,7 +78,7 @@
 	thumbURL="thumbs/009.jpg"
 	linkURL="./img/fotos/009.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/009.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/009.jpg">
     <title><![CDATA[Cartaz]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -86,7 +86,7 @@
 	thumbURL="thumbs/010.jpg"
 	linkURL="./img/fotos/010.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/010.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/010.jpg">
     <title><![CDATA[Atividade do ICBjr sobre culturas de microorganismos]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -94,15 +94,15 @@
 	thumbURL="thumbs/011.jpg"
 	linkURL="./img/fotos/011.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/011.jpg">
-    <title><![CDATA[Prof. Gubi ensinando a matemática por traz das mágicas]]></title>
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/011.jpg">
+    <title><![CDATA[Prof. Gubi ensinando a matemática por trás das mágicas]]></title>
     <caption><![CDATA[]]></caption>
   </image>
   <image imageURL="images/012.jpg"
 	thumbURL="thumbs/012.jpg"
 	linkURL="./img/fotos/012.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/012.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/012.jpg">
     <title><![CDATA[Atividade do SciCast/Deviante]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -110,7 +110,7 @@
 	thumbURL="thumbs/013.jpg"
 	linkURL="./img/fotos/013.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/013.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/013.jpg">
     <title><![CDATA[Atividade da Banca da Ciência]]></title>
     <caption><![CDATA[]]></caption>
   </image>
@@ -118,7 +118,7 @@
 	thumbURL="thumbs/014.jpg"
 	linkURL="./img/fotos/014.jpg"
 	linkTarget="_blank"
-	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/img/fotos/014.jpg">
+	sourcePath="/Users/felipesimoes/Documents/marchapelacienciasp/images/014.jpg">
     <title><![CDATA[Público ouvindo os discursos mesmo debaixo de chuva]]></title>
     <caption><![CDATA[]]></caption>
   </image>
