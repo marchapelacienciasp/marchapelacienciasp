@@ -1,0 +1,287 @@
+<html lang="pt-BR">
+
+<head>
+    <title>Notícias</title>
+    <link rel="shortcut icon" href="../img/atomo.ico" />
+    <meta name="description" content="Site oficial da Marcha pela Ciência em São Paulo">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./semantic/semantic.css">
+    <script src="./semantic/jquery.min.js"></script>
+    <script src="./semantic/semantic.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 10px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+
+  <script src="semantic/jquery.min.js"></script>
+  <script src="semantic/components/visibility.js"></script>
+  <script src="semantic/components/sidebar.js"></script>
+  <script src="semantic/components/transition.js"></script>
+
+  <script>
+ $(document)
+   .ready(function() {
+
+     // fix menu when passed
+     $('.masthead')
+       .visibility({
+         once: false,
+         onBottomPassed: function() {
+           $('.fixed.menu').transition('fade in');
+         },
+         onBottomPassedReverse: function() {
+           $('.fixed.menu').transition('fade out');
+         }
+       })
+     ;
+
+     // create sidebar and attach to menu open
+     $('.ui.sidebar')
+       .sidebar('attach events', '.toc.item')
+     ;
+
+   })
+ ;
+ </script>
+
+</head>
+
+
+<body style="background:#e2e2e2">
+  <section class="ui center aligned container">
+    <br />
+    <h1 class="ui icon header" style="font-family: 'Raleway'">
+  <img class="ui image" src="./img/atomo sp.png" style="width:40%">
+  <div class="content"><br />
+    Marcha Pela Ciência
+    <div class="sub header">São Paulo</div>
+  </div>
+  <br>
+</h1>
+  </section>
+
+  <section class="ui container" style="max-width:500px">
+    <div class="ui secondary menu" style="font-family:'Raleway'">
+      <div class="item" style="font-size:1.5em">A Marcha na Mídia</div>
+        <a class="ui right item" onclick="fechar()">
+          Voltar</a></div>
+
+        <div class="ui two stackable cards">
+
+          <a class="card" href="http://revistapesquisa.fapesp.br/2017/04/25/pelo-mundo-todo-marcha-da-ciencia-chama-atencao-para-problemas-locais/" target="_blank">
+            <div class="center aligned content">
+              <div class="header">
+                Pesquisa FAPESP
+              </div>
+              <div class="meta">
+                25/04
+              </div>
+              <div class="description">
+                Marcha pela Ciência se espalha no mundo com pautas locais
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="http://www.canalmeio.com.br/edicoes/2017/04/24/ultradireita-e-centro-se-encontram-no-2o-turno-frances/?jumpto=marcha-pela-ciencia-se-espalha-por-600-cidades-no-mundo" target="_blank">
+            <div class="center aligned content">
+              <div class="header">
+                Canal Meio
+              </div>
+              <div class="meta">
+                24/04
+              </div>
+              <div class="description">
+                A Marcha pela Ciência se espalhou por cerca de 600 cidades pelo mundo
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="http://veja.abril.com.br/ciencia/marcha-pela-ciencia-23-cidades-do-brasil-protestam-neste-sabado/" target="_blank">
+            <div class="center aligned content">
+              <div class="header">
+                Veja
+              </div>
+              <div class="meta">
+                22/04
+              </div>
+              <div class="description">
+                Marcha Pela Ciência: 23 cidades do Brasil protestam neste sábado
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="https://youtu.be/c3kavE6TSp4?t=57s" target="_blank">
+            <div class="center aligned content">
+              <div class="header">
+                Rede TVT
+              </div>
+              <div class="meta">
+                22/04
+              </div>
+              <div class="description">
+                Seu Jornal - 22/04/2017
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="http://ciencia.estadao.com.br/noticias/geral,discursos-contra-cortes-e-obscurantismo-marcam-marcha-pela-ciencia-em-sao-paulo,70001748268" target="_blank">
+            <div class="center aligned content">
+              <div class="header">
+                Estadão
+            </div>
+              <div class="meta">
+                22/04
+              </div>
+              <div class="description">
+                Discursos contra cortes e obscurantismo marcam Marcha pela Ciência em São Paulos
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="http://www1.folha.uol.com.br/ciencia/2017/04/1877790-em-sp-marcha-tem-feira-de-ciencias-e-discurso-contra-cortes-em-pesquisas.shtml" target="_blank">
+            <div class="center aligned content">
+              <div class="header">
+                Folha de São Paulo
+              </div>
+              <div class="meta">
+                22/04
+              </div>
+              <div class="description">
+                Em SP, marcha tem feira de ciências e discursos contra corte em pesquisas
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="http://noticias.r7.com/tecnologia-e-ciencia/por-que-e-importante-marchar-pela-ciencia-21042017" target="_blank">
+            <div class="center aligned content">
+              <div class="header">
+                R7 Notícias
+              </div>
+              <div class="meta">
+                21/04
+              </div>
+              <div class="description">
+                Por que é importante marchar pela ciência?
+              </div>
+            </div>
+          </a>
+
+          <a class="card" href="http://tv.estadao.com.br/cidades,ciencia-em-crise,730419" target="_blank">
+            <div class="center aligned content">
+              <div class="header">
+                Estadão
+              </div>
+              <div class="meta">
+                21/04
+              </div>
+              <div class="description">
+                Ciência em crise
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+  <script>
+  function fechar(){close();}
+  </script>
+
+</body>
+
+</html>
