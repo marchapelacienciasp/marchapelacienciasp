@@ -218,7 +218,7 @@
             <br />
           </div>
         </a>
-        <a class="ui formu card" style="width:100%" href="">
+        <a class="ui formu card" style="width:100%">
           <div class="content">
             <br />
             <div class="ui center aligned header">
@@ -274,7 +274,7 @@
                   Receba o Manifesto
 
               </a>
-              <a class="ui formu button"href="">
+              <a class="ui formu button">
                 <i class="left arrow icon"></i><p>
                   VOLTAR
                 </p>
@@ -290,11 +290,23 @@
 
   <script>
     $('.formu').hide()
-      $('.registrar').click(function(){
-        $('.eleven.wide').hide();
-        $('.registrar').hide()
-        $('.formu').show()
-      })
+    $('.registrar').click(function(){
+      $('.eleven.wide').hide();
+      $('.registrar').hide()
+      $('.formu').show()
+    })
+
+    $('.formu.button').click(function(){
+      $('.eleven.wide').show();
+      $('.formu').hide()
+      $('.registrar').show()
+    })
+
+    $('.formu.card').click(function(){
+      $('.eleven.wide').show();
+      $('.formu').hide()
+      $('.registrar').show()
+    })
   </script>
 
 </body>
